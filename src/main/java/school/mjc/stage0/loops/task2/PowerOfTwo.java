@@ -5,8 +5,9 @@ public class PowerOfTwo {
         int counter = 0, i = 2;
         if (power >= 0){
             while (counter <= power){
-                int result = i ^ counter;
-                System.out.println(result); 
+                double result = Math.pow(i, counter);
+                System.out.println(Math.round(result)); 
+                counter++;
             }
         } else {
             System.out.println("too much power");
